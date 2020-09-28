@@ -10,3 +10,42 @@ body {
   font-family: 'Poppins', sans-serif;
   margin:0;
 }
+
+.movie_container {
+  display:flex;
+  flex-wrap: wrap;
+}
+
+.movie {
+  background-color: #373b69;
+  position: relative;
+  border-radius: 3px;
+  box-shadow: 3px,3px,5px,rgba(0,0,0,1);
+  overflow: hidden;
+  width: 250px;
+  margin: 1rem;
+}
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie_info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.movie_info h3{
+  margin: 0;
+}
+
+.movie-overview{
+  position: absolute;
+  background-color: white;
+  color: #22254b;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
