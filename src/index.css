@@ -22,7 +22,7 @@ body {
   border-radius: 3px;
   box-shadow: 3px,3px,5px,rgba(0,0,0,1);
   overflow: hidden;
-  width: 250px;
+  width: 300px;
   margin: 1rem;
 }
 
@@ -44,8 +44,20 @@ body {
 .movie-overview{
   position: absolute;
   background-color: white;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px,-3px,5px,rgba(0,0,0,1);
   color: #22254b;
+  padding: 1rem;
   bottom: 0;
   left: 0;
   right: 0;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+  overflow:auto;
+  max-height: 100%;
+}
+
+.movie:hover .movie-overview{
+  transform: translateY(0);
 }
