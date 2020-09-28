@@ -12,9 +12,17 @@ function App() {
     fetch(FEATURED_API).then(res => res.json()).then(data => setMovies(data.results));
   },[])
 
-  return <div className="movie_container">
-    {movies.length > 0 && movies.map(movie => (<Movie key={movie.id} {...movie} />))}
-  </div>
+  return (
+    <>
+      <header>
+        <input className="search" type="search" placeholder="Search..." />
+      </header>
+      <div className="movie_container">
+        {movies.length > 0 && movies.map(movie => (<Movie key={movie.id} {...movie} />))}
+      </div>
+    </>
+  )
+
 }
 
 export default App;
